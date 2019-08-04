@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+<!--    引入jQuery库-->
+
+    <script>
+        $(function(){
+            $("#btn").click(function () {
+                $("input").val("真实");
+                $("#link").attr("href","https://baidu.com");// 通过attr修改属性已达到修改链接的目的
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<h1>这是一个标题</h1>
+<p>这是一个文本</p>
+<p><a href="https://www.runoob.com" id="link">一个链接</a></p>
+<button id="btn">这是一个按钮</button>
+<input type="text" />
+
+
+</body>
+</html>
